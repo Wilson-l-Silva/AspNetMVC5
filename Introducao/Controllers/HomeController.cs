@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Introducao.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,12 @@ namespace Introducao.Controllers
     {
         public ActionResult Index()
         {
+            var p1 = new Pessoa
+            {
+                PessoaId = 1,
+                Nome = "Wilson Lima",
+                Tipo = "Pessoa Física"
+            };
             return View();
         }
 
