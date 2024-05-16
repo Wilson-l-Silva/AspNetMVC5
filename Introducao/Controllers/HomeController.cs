@@ -17,6 +17,12 @@ namespace Introducao.Controllers
                 Nome = "Wilson Lima",
                 Tipo = "Pessoa Física"
             };
+
+            //passando informações para view
+            ViewData["PessoaId"] = p1.PessoaId;
+            ViewData["Nome"] = p1.Nome;
+            ViewData["Tipo"] = p1.Tipo;
+
             return View();
         }
 
